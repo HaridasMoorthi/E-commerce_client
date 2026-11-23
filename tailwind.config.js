@@ -20,7 +20,8 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif']
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        cinzel: ['Cinzel', 'serif']
       },
       aspectRatio: {
         '3/4': '3 / 4',

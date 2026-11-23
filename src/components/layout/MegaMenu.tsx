@@ -59,10 +59,10 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ categoryId, onClose }) => {
                 HERITAGE CURATION
               </span>
               <h4 className="text-lg font-serif font-bold text-white leading-snug">
-                {category.name === 'Women' ? 'The Royal Silk & Zari Heritage Edit' : 'Sartorial Autumn Essentials'}
+                Savile Row & Italian Sartorial Gentlemen Edit
               </h4>
               <p className="text-xs text-gray-400 font-light">
-                Handcrafted bespoke ensembles, pure handloom silks, and elevated luxury essentials.
+                Hand-tailored wool suits, black-tie tuxedos, pure Mongolian cashmere & Goodyear welted leather.
               </p>
             </div>
 

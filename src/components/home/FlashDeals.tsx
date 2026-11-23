@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Timer, Zap } from 'lucide-react';
-import { PRODUCTS } from '../../data/products';
+import { Timer, Sparkles } from 'lucide-react';
+import { useECommerce } from '../../context/ECommerceContext';
 import { ProductCard } from '../card/ProductCard';
 
 export const FlashDeals: React.FC = () => {
+  const { products } = useECommerce();
   const [timeLeft, setTimeLeft] = useState({
     hours: 5,
     minutes: 42,
@@ -22,43 +23,46 @@ export const FlashDeals: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const deals = PRODUCTS.filter((p) => p.isDealOfTheDay || p.discountPercentage >= 50).slice(0, 4);
+  const deals = products.filter((p) => p.isDealOfTheDay || p.discountPercentage >= 50).slice(0, 4);
 
   const formatNumber = (num: number) => num.toString().padStart(2, '0');
 
   return (
-    <section className="py-12 bg-[#fafafa]">
+    <section className="py-14 bg-[#fbfaf8] border-b border-stone-200/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header with Countdown Timer */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 bg-white p-5 rounded-xl border border-pink-100 shadow-sm">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-pink-50 text-[#fc2779] border border-pink-200 flex items-center justify-center">
-              <Zap className="w-5 h-5 fill-[#fc2779]" />
+        {/* Header with Luxury Countdown Timer */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 bg-white p-5 sm:p-6 rounded-xl border border-stone-200/90 shadow-sm">
+          <div className="flex items-center gap-3.5">
+            <div className="w-11 h-11 rounded-full bg-amber-50 text-amber-700 border border-amber-200 flex items-center justify-center flex-shrink-0">
+              <Sparkles className="w-5 h-5 fill-amber-600 text-amber-600" />
             </div>
             <div>
-              <h2 className="text-xl font-serif font-black text-gray-900">
-                Curated Flash Offers
+              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-amber-800">
+                LIMITED-RUN PRIVILEGE RELEASE
+              </div>
+              <h2 className="text-xl sm:text-2xl font-serif font-black text-stone-900">
+                Curated Private Vault Deals
               </h2>
-              <p className="text-xs text-gray-500">
-                Limited-run reductions on heritage pieces & dresses — strictly while stock lasts.
+              <p className="text-xs text-stone-500 mt-0.5">
+                Exclusive reductions on Savile Row suiting, Italian velvet dinner jackets & pure cashmere — strictly while bespoke allocations remain.
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-bold text-gray-800 bg-pink-50/60 px-4 py-2 rounded-lg border border-pink-200">
-            <Timer className="w-4 h-4 text-[#fc2779]" />
-            <span className="text-gray-700">OFFER CLOSES IN:</span>
-            <div className="flex items-center gap-1 font-mono text-sm">
-              <span className="bg-[#fc2779] text-white px-2 py-0.5 rounded font-bold shadow-xs">
+          <div className="flex items-center gap-2 text-xs font-bold text-stone-800 bg-stone-50 px-4 py-2.5 rounded-lg border border-stone-200/80 flex-shrink-0">
+            <Timer className="w-4 h-4 text-amber-700" />
+            <span className="text-[11px] uppercase tracking-wider text-stone-600">VAULT CLOSES:</span>
+            <div className="flex items-center gap-1 font-mono text-xs">
+              <span className="bg-stone-900 text-amber-300 px-2 py-1 rounded font-bold shadow-xs border border-amber-400/20">
                 {formatNumber(timeLeft.hours)}h
               </span>
-              <span className="text-[#fc2779] font-bold">:</span>
-              <span className="bg-[#fc2779] text-white px-2 py-0.5 rounded font-bold shadow-xs">
+              <span className="text-amber-700 font-bold">:</span>
+              <span className="bg-stone-900 text-amber-300 px-2 py-1 rounded font-bold shadow-xs border border-amber-400/20">
                 {formatNumber(timeLeft.minutes)}m
               </span>
-              <span className="text-[#fc2779] font-bold">:</span>
-              <span className="bg-[#fc2779] text-white px-2 py-0.5 rounded font-bold shadow-xs">
+              <span className="text-amber-700 font-bold">:</span>
+              <span className="bg-stone-900 text-amber-300 px-2 py-1 rounded font-bold shadow-xs border border-amber-400/20">
                 {formatNumber(timeLeft.seconds)}s
               </span>
             </div>

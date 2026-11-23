@@ -3,7 +3,7 @@ import { ShieldCheck, RefreshCw, Truck, CreditCard, Mail, Phone, Instagram, Face
 import { useECommerce } from '../../context/ECommerceContext';
 
 export const Footer: React.FC = () => {
-  const { openCategory, openTracking } = useECommerce();
+  const { openCategory, openTracking, currentUser, openLogin, storeContent } = useECommerce();
 
   return (
     <footer className="bg-white border-t border-gray-200 mt-20">
@@ -85,16 +85,15 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Category Links */}
+          {/* Menswear Collections */}
           <div className="space-y-3">
-            <h5 className="text-xs font-bold uppercase tracking-wider text-gray-900">Collections</h5>
+            <h5 className="text-xs font-bold uppercase tracking-wider text-gray-900">Menswear Atelier</h5>
             <ul className="space-y-2 text-xs text-gray-600">
-              <li><button onClick={() => openCategory('Indianwear')} className="hover:text-black">Heritage Silk Sarees</button></li>
-              <li><button onClick={() => openCategory('Westernwear')} className="hover:text-black">Bespoke Slip Dresses</button></li>
-              <li><button onClick={() => openCategory('Topwear', 'men')} className="hover:text-black">Gentlemen's Kurta Suits</button></li>
-              <li><button onClick={() => openCategory('Footwear')} className="hover:text-black">Handcrafted Footwear</button></li>
-              <li><button onClick={() => openCategory('Jewellery & Bags')} className="hover:text-black">Luxury Leather Totes</button></li>
-              <li><button onClick={() => openCategory('Nykaa Luxe', 'luxe')} className="hover:text-amber-800 font-semibold">Old Money Luxe</button></li>
+              <li><button onClick={() => openCategory('Suits & Tuxedos', 'men')} className="hover:text-black cursor-pointer">Suits & Tuxedos</button></li>
+              <li><button onClick={() => openCategory('Shirts & Polos', 'men')} className="hover:text-black cursor-pointer">Shirts & Polos</button></li>
+              <li><button onClick={() => openCategory('Trousers & Chinos', 'men')} className="hover:text-black cursor-pointer">Trousers & Chinos</button></li>
+              <li><button onClick={() => openCategory('Knitwear & Sweaters', 'men')} className="hover:text-black cursor-pointer">Knitwear & Sweaters</button></li>
+              <li><button onClick={() => openCategory('Suits & Tuxedos', 'men')} className="hover:text-amber-800 font-semibold cursor-pointer">Sartorial Bespoke</button></li>
             </ul>
           </div>
 
@@ -105,7 +104,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => openTracking()}
-                  className="text-amber-700 font-bold hover:underline flex items-center gap-1"
+                  className="text-amber-700 font-bold hover:underline flex items-center gap-1 cursor-pointer"
                 >
                   <Truck className="w-3.5 h-3.5" />
                   <span>Live Order Tracking</span>
@@ -125,11 +124,11 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-xs text-gray-600">
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-gray-900" />
-                <span>+91 1800-267-4444 (Toll Free)</span>
+                <span>{storeContent?.contactPhone || '+91 1800-267-4444 (Toll Free)'}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-gray-900" />
-                <span>concierge@oldmoney.com</span>
+                <span>{storeContent?.contactEmail || 'concierge@oldmoney.luxury'}</span>
               </div>
             </div>
             <div className="pt-2">

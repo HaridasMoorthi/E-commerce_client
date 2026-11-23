@@ -5,13 +5,13 @@ import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
 import { LoginPage } from './pages/LoginPage';
+import { TrackingPage } from './pages/TrackingPage';
 import { ProductDetail } from './components/pdp/ProductDetail';
 import { CartDrawer } from './components/cart/CartDrawer';
 import { WishlistDrawer } from './components/wishlist/WishlistDrawer';
 import { SearchModal } from './components/search/SearchModal';
 import { CheckoutModal } from './components/checkout/CheckoutModal';
 import { OrderSuccessModal } from './components/checkout/OrderSuccessModal';
-import { OrderTrackingModal } from './components/tracking/OrderTrackingModal';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { Eye } from 'lucide-react';
 
@@ -28,15 +28,20 @@ const MainContent: React.FC = () => {
     return <LoginPage />;
   }
 
+  // 3. Dedicated Full-Page Live Shipment Tracking (Replaces Pop-up Modal)
+  if (currentView === 'tracking') {
+    return <TrackingPage />;
+  }
+
   return (
     <main className="min-h-screen">
-      {/* 3. Homepage View */}
+      {/* 4. Homepage View */}
       {currentView === 'home' && <HomePage />}
 
-      {/* 4. Product Listing Page (PLP) */}
+      {/* 5. Product Listing Page (PLP) */}
       {currentView === 'plp' && <CatalogPage />}
 
-      {/* 5. Product Detail Page (PDP) */}
+      {/* 6. Product Detail Page (PDP) */}
       {currentView === 'pdp' && selectedProduct && (
         <ProductDetail product={selectedProduct} />
       )}
@@ -51,7 +56,7 @@ const AppShell: React.FC = () => {
   const isStandalonePage = currentView === 'admin' || currentView === 'login';
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#fafafa]">
+    <div className="flex flex-col min-h-screen bg-[#fafafa] w-full max-w-full overflow-x-hidden">
       {!isStandalonePage && <Header />}
       <MainContent />
       {!isStandalonePage && <Footer />}
@@ -69,13 +74,12 @@ const AppShell: React.FC = () => {
         </div>
       )}
 
-      {/* Global Shopping Overlays (Cart, Wishlist, Search, Checkout, Tracking) */}
+      {/* Global Shopping Overlays (Cart, Wishlist, Search, Checkout) */}
       <CartDrawer />
       <WishlistDrawer />
       <SearchModal />
       <CheckoutModal />
       <OrderSuccessModal />
-      <OrderTrackingModal />
     </div>
   );
 };

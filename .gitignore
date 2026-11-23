@@ -34,3 +34,18 @@ lerna-debug.log*
 *.sln
 *.sw?
 *.bak
+
+# Python & Django
+backend/venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+db.sqlite3
+*.log
+
+# Temporary image crops
+crop_*.png

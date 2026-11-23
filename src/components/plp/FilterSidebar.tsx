@@ -44,7 +44,7 @@ export const FilterSidebar: React.FC = () => {
       <div className="space-y-2">
         <h4 className="text-xs font-bold text-gray-800 uppercase tracking-wide">Category</h4>
         <div className="space-y-1.5 max-h-40 overflow-y-auto text-xs text-gray-600 no-scrollbar">
-          {['Indianwear', 'Westernwear', 'Footwear', 'Jewellery & Bags', 'Topwear'].map((cat) => (
+          {['Suits & Tuxedos', 'Shirts & Polos', 'Trousers & Chinos', 'Knitwear & Sweaters'].map((cat) => (
             <label key={cat} className="flex items-center gap-2 cursor-pointer hover:text-gray-900">
               <input
                 type="radio"
@@ -129,7 +129,7 @@ export const FilterSidebar: React.FC = () => {
             className="accent-amber-600 w-4 h-4"
           />
           <span className="text-xs font-bold text-amber-900 uppercase">
-            Nykaa Luxe Only
+            Old Money Luxe Only
           </span>
         </label>
       </div>
