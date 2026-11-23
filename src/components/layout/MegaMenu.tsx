@@ -15,7 +15,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ categoryId, onClose }) => {
   if (!category) return null;
 
   return (
-    <div className="absolute top-0 left-0 w-full bg-white shadow-2xl border-t border-gray-200 z-50 animate-fadeIn">
+    <div className="absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-200 z-50 animate-fadeIn">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-12 gap-8">
           

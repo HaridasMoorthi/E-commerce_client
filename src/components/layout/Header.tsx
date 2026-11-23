@@ -32,7 +32,10 @@ export const Header: React.FC = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-white shadow-xs border-b border-gray-200 w-full font-sans overflow-x-hidden">
+    <header 
+      className="sticky top-0 z-50 bg-white shadow-xs border-b border-gray-200 w-full font-sans"
+      onMouseLeave={() => setActiveMegaCategory(null)}
+    >
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-16 sm:h-18 gap-2 sm:gap-4 lg:gap-6">
@@ -83,7 +86,7 @@ export const Header: React.FC = () => {
               >
                 <Search className="w-4 h-4 text-gray-400 flex-shrink-0" />
                 <span className="text-gray-500 text-xs truncate">
-                  Search dresses, suits, styles...
+                  Search suits, shirts, tuxedos, styles...
                 </span>
               </button>
             </div>
