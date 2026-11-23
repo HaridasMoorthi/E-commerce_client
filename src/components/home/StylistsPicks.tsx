@@ -13,38 +13,38 @@ interface StylistPick {
 const STYLISTS_PICKS: StylistPick[] = [
   {
     id: 'spk-1',
-    headline: 'BIAS-CUT MULBERRY SLIP',
-    subcaption: '22-momme pure silk cowl neck with liquid drape',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    headline: 'DOUBLE BREASTED ERA',
+    subcaption: 'Savile Row sharp suiting with roped shoulders',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&auto=format&fit=crop&q=80',
+    category: 'Suits & Tuxedos'
   },
   {
     id: 'spk-2',
-    headline: 'EMERALD VELVET GALA GOWN',
-    subcaption: 'Sculptural open back with sweeping high slit',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    headline: 'CASHMERE LAYERING',
+    subcaption: 'Loro Piana cable knits & spread-collar polos',
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&auto=format&fit=crop&q=80',
+    category: 'Knitwear & Sweaters'
   },
   {
     id: 'spk-3',
-    headline: 'PORTOFINO RIVIERA LINEN',
-    subcaption: 'Accordion pleated Normandy linen with horn belt',
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    headline: 'PENNY LOAFERS',
+    subcaption: 'Goodyear welted leather with hand-burnished patina',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=80',
+    category: 'Shoes & Accessories'
   },
   {
     id: 'spk-4',
-    headline: 'BOUCLÉ TWEED BLAZER DRESS',
-    subcaption: 'Chanel-style tailoring with baroque pearl buttons',
-    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    headline: 'VELVET DINNER SUITS',
+    subcaption: 'Midnight Italian velvet and silk grosgrain lapels',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80',
+    category: 'Suits & Tuxedos'
   },
   {
     id: 'spk-5',
-    headline: 'SAVILE ROW BESPOKE SUITS',
-    subcaption: 'Super 150s double-breasted formal dinner suits',
-    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=700&auto=format&fit=crop&q=85',
-    category: 'Suits & Tuxedos'
+    headline: 'GURKHA TAILORING',
+    subcaption: 'High-waisted forward pleats in British flannel',
+    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&auto=format&fit=crop&q=80',
+    category: 'Trousers & Chinos'
   }
 ];
 

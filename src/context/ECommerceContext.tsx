@@ -26,19 +26,19 @@ export interface StoreContent {
 }
 
 export const DEFAULT_STORE_CONTENT: StoreContent = {
-  announcementTicker: '✦ OLD MONEY LUXURY ATELIER: MULBERRY SILK DRESSES, VELVET GOWNS & SAVILE ROW SUITING • COMPLIMENTARY EXPRESS DELIVERY ✦',
-  heroHeadline: 'THE OLD MONEY DRESS EDIT',
-  heroSubheadline: 'Hand-Tailored 22-Momme Mulberry Silk Bias Slips, Emerald Velvet Gala Gowns & Pleated Linen Riviera Silhouettes',
-  heroTag: 'HAUTE COUTURE EDIT',
-  heroButtonText: 'EXPLORE LUXURY DRESSES',
-  heroImage: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1920&auto=format&fit=crop&q=85',
+  announcementTicker: '✦ OLD MONEY SARTORIAL MENSWEAR: SAVILE ROW SUITS, VELVET TUXEDOS & PURE CASHMERE • COMPLIMENTARY EXPRESS DELIVERY ✦',
+  heroHeadline: 'THE SARTORIAL GENTLEMAN EDIT',
+  heroSubheadline: 'Hand-Tailored Savile Row Super 150s Wool Tuxedos, Double-Breasted Suits & Velvet Dinner Jackets',
+  heroTag: 'LIMITED ATELIER PRODUCTION',
+  heroButtonText: 'EXPLORE BESPOKE SUITS',
+  heroImage: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&auto=format&fit=crop&q=85',
   spotlightTitle: 'IN THE SPOTLIGHT',
-  spotlightSubtitle: 'Haute Couture Houses & Private Atelier Guilds',
+  spotlightSubtitle: 'Heritage Menswear Houses & Private Sartorial Guilds',
   stylesTitle: 'STYLES TO CELEBRATE IN',
-  stylesSubtitle: 'Curated Wardrobe for Soirées, Galas, Opera & Country Estates',
+  stylesSubtitle: 'Curated Wardrobe for Galas, Black-Tie Soirées & Country Estates',
   luxeTitle: 'THE LUXE COLLECTION',
-  luxeSubtitle: 'RSVP Atelier, Tom Ford Haute Couture & Chanel Private Atelier',
-  luxeBannerImage: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1600&auto=format&fit=crop&q=85',
+  luxeSubtitle: 'Savile Row Bespoke, Brioni Milano & Tom Ford Private Tailoring',
+  luxeBannerImage: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&auto=format&fit=crop&q=85',
   contactPhone: '1800-267-4444',
   contactEmail: 'concierge@oldmoney.luxury',
   contactAddress: 'A-42 Connaught Place, Block B, New Delhi - 110001'
@@ -205,19 +205,19 @@ const INITIAL_ORDERS: AdminOrder[] = [
     itemsCount: 2,
     items: [
       {
-        product: PRODUCTS[0], // The Ascot Mulberry Silk Bias-Cut Champagne Slip Dress
-        selectedSize: 'M',
-        selectedColor: 'Champagne Gold',
+        product: PRODUCTS[0], // Savile Row Double-Breasted Super 150s Wool Tuxedo Suit
+        selectedSize: '40R',
+        selectedColor: 'Midnight Obsidian',
         quantity: 1
       },
       {
-        product: PRODUCTS[3], // Tweed Bouclé Pearl-Buttoned Blazer Dress
-        selectedSize: '38 (S)',
-        selectedColor: 'Ecru & Gold Tweed',
+        product: PRODUCTS[4], // Egyptian Giza Cotton French-Cuff Dress Shirt
+        selectedSize: '40 (15.75)',
+        selectedColor: 'Crisp Optic White',
         quantity: 1
       }
     ],
-    totalAmount: 22498,
+    totalAmount: 23998,
     paymentMode: 'UPI Instant',
     status: 'DISPATCHED',
     awbNumber: 'OM-948210384',
@@ -235,13 +235,13 @@ const INITIAL_ORDERS: AdminOrder[] = [
     itemsCount: 1,
     items: [
       {
-        product: PRODUCTS[1], // Emerald Noir Velvet Backless High-Slit Gala Evening Gown
-        selectedSize: 'S',
-        selectedColor: 'Emerald Noir',
+        product: PRODUCTS[1], // Midnight Navy Silk Velvet Peak-Lapel Dinner Jacket
+        selectedSize: '42R',
+        selectedColor: 'Midnight Navy Velvet',
         quantity: 1
       }
     ],
-    totalAmount: 18499,
+    totalAmount: 14999,
     paymentMode: 'HDFC Luxury Card',
     status: 'PACKED',
     awbNumber: 'OM-837261942',
@@ -259,19 +259,19 @@ const INITIAL_ORDERS: AdminOrder[] = [
     itemsCount: 2,
     items: [
       {
-        product: PRODUCTS[2], // Portofino Pleated French Linen Belted Riviera Midi Dress
-        selectedSize: 'M',
+        product: PRODUCTS[2], // Pure Mongolian Cashmere Cable-Knit Polo Sweater
+        selectedSize: 'L',
         selectedColor: 'Ivory Cream',
         quantity: 1
       },
       {
-        product: PRODUCTS[4], // Chiffon Tiered Floral Silk Soirée Slip Dress
-        selectedSize: 'S',
-        selectedColor: 'Vintage Rose Floral',
+        product: PRODUCTS[3], // High-Waisted Double-Pleated Wool Flannel Gurkha Trousers
+        selectedSize: '34',
+        selectedColor: 'Charcoal Melange Flannel',
         quantity: 1
       }
     ],
-    totalAmount: 21498,
+    totalAmount: 15998,
     paymentMode: 'UPI Instant',
     status: 'DELIVERED',
     awbNumber: 'OM-729103845',
@@ -289,13 +289,13 @@ const INITIAL_ORDERS: AdminOrder[] = [
     itemsCount: 1,
     items: [
       {
-        product: PRODUCTS[5], // Savile Row Double-Breasted Super 150s Wool Tuxedo Suit
-        selectedSize: '40R',
-        selectedColor: 'Midnight Obsidian',
+        product: PRODUCTS[5], // Hand-Burnished Goodyear-Welted Leather Penny Loafers
+        selectedSize: '9 UK',
+        selectedColor: 'Oxblood Cordovan',
         quantity: 1
       }
     ],
-    totalAmount: 19499,
+    totalAmount: 12499,
     paymentMode: 'UPI Instant',
     status: 'CONFIRMED',
     awbNumber: 'OM-581920482',
@@ -310,22 +310,16 @@ const INITIAL_ORDERS: AdminOrder[] = [
     address: '14 Poes Garden',
     city: 'Chennai',
     pincode: '600086',
-    itemsCount: 2,
+    itemsCount: 1,
     items: [
       {
-        product: PRODUCTS[7], // Pure Mongolian Cashmere Cable-Knit Polo Sweater
-        selectedSize: 'L',
-        selectedColor: 'Ivory Cream',
-        quantity: 1
-      },
-      {
-        product: PRODUCTS[8], // High-Waisted Double-Pleated Wool Flannel Gurkha Trousers
-        selectedSize: '34',
-        selectedColor: 'Charcoal Melange Flannel',
+        product: PRODUCTS[6], // Double-Breasted Pure Cashmere Camel Chesterfield Overcoat
+        selectedSize: '42R',
+        selectedColor: 'Camel Melange',
         quantity: 1
       }
     ],
-    totalAmount: 15998,
+    totalAmount: 21499,
     paymentMode: 'Amex Centurion',
     status: 'DELIVERED',
     awbNumber: 'OM-392817459',

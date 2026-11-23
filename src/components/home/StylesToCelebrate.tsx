@@ -16,53 +16,53 @@ interface CelebrateCard {
 const CELEBRATE_ITEMS: CelebrateCard[] = [
   {
     id: 'cel-1',
-    oneWord: 'SILK SLIP',
-    subtitle: 'Ascot 22-Momme Bias Mulberry Slips',
-    tag: 'Haute Soirée',
-    badge: 'Bestseller',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=85',
+    oneWord: 'TUXEDO',
+    subtitle: 'Black-Tie Velvet Dinner Suits',
+    tag: 'Black Tie Gala',
+    badge: 'Luxe Bespoke',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80',
     discount: 'Up to 50% off',
-    category: 'Westernwear & Dresses'
+    category: 'Suits & Tuxedos'
   },
   {
     id: 'cel-2',
-    oneWord: 'GALA GOWN',
-    subtitle: 'Emerald Velvet Backless High-Slit Gowns',
-    tag: 'Black Tie Gala',
-    badge: 'Tom Ford Couture',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&auto=format&fit=crop&q=85',
+    oneWord: 'SUITING',
+    subtitle: 'Savile Row Super 150s Suits',
+    tag: 'Bespoke Tailoring',
+    badge: 'Bestseller',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop&q=80',
     discount: 'Min 45% off',
-    category: 'Westernwear & Dresses'
+    category: 'Suits & Tuxedos'
   },
   {
     id: 'cel-3',
-    oneWord: 'RIVIERA DRESS',
-    subtitle: 'Pleated Normandy Linen Summer Silhouettes',
-    tag: 'Mediterranean Estate',
+    oneWord: 'BLAZERS',
+    subtitle: 'Italian Tweed & Cashmere Coats',
+    tag: 'Sartorial Club',
     badge: 'New Season',
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop&q=85',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&auto=format&fit=crop&q=80',
     discount: 'Up to 50% off',
-    category: 'Westernwear & Dresses'
+    category: 'Suits & Tuxedos'
   },
   {
     id: 'cel-4',
-    oneWord: 'TWEED BOUCLÉ',
-    subtitle: 'Pearl-Buttoned Double-Breasted Dresses',
-    tag: 'Chanel Atelier',
-    badge: 'Limited Edition',
-    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&auto=format&fit=crop&q=85',
+    oneWord: 'CASHMERE',
+    subtitle: 'Pure Mongolian Cable Knits',
+    tag: 'Quiet Luxury',
+    badge: 'Loro Piana',
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&auto=format&fit=crop&q=80',
     discount: 'Min 40% off',
-    category: 'Westernwear & Dresses'
+    category: 'Knitwear & Sweaters'
   },
   {
     id: 'cel-5',
-    oneWord: 'TUXEDO',
-    subtitle: 'Savile Row Super 150s Dinner Suits',
-    tag: 'British Bespoke',
-    badge: 'Savile Row',
-    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop&q=85',
-    discount: 'Min 40% off',
-    category: 'Suits & Tuxedos'
+    oneWord: 'TROUSERS',
+    subtitle: 'High-Waisted Gurkha Flannels',
+    tag: 'Sartorial Trousers',
+    badge: 'Trending',
+    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&auto=format&fit=crop&q=80',
+    discount: 'Min 35% off',
+    category: 'Trousers & Chinos'
   }
 ];
 

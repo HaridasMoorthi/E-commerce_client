@@ -10,38 +10,28 @@ interface CategoryStripItem {
 
 const CATEGORY_STRIP_ITEMS: CategoryStripItem[] = [
   {
-    name: 'Silk Slip Dresses',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&auto=format&fit=crop&q=80',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    name: 'Evening Gowns',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&auto=format&fit=crop&q=80',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    name: 'Riviera Dresses',
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&auto=format&fit=crop&q=80',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    name: 'Tweed Dresses',
-    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&auto=format&fit=crop&q=80',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    name: 'Suits & Tuxedos',
+    name: 'Bespoke Suits',
     image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&auto=format&fit=crop&q=80',
     category: 'Suits & Tuxedos'
   },
   {
-    name: 'Velvet Jackets',
+    name: 'Black-Tie Tuxedos',
     image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&auto=format&fit=crop&q=80',
+    category: 'Suits & Tuxedos'
+  },
+  {
+    name: 'Velvet Jackets',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80',
     category: 'Suits & Tuxedos'
   },
   {
     name: 'Dress Shirts',
     image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&auto=format&fit=crop&q=80',
+    category: 'Shirts & Polos'
+  },
+  {
+    name: 'Knitted Polos',
+    image: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&auto=format&fit=crop&q=80',
     category: 'Shirts & Polos'
   },
   {
@@ -53,6 +43,16 @@ const CATEGORY_STRIP_ITEMS: CategoryStripItem[] = [
     name: 'Cashmere Knits',
     image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&auto=format&fit=crop&q=80',
     category: 'Knitwear & Sweaters'
+  },
+  {
+    name: 'Chesterfield Coats',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=400&auto=format&fit=crop&q=80',
+    category: 'Knitwear & Sweaters'
+  },
+  {
+    name: 'Penny Loafers',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&auto=format&fit=crop&q=80',
+    category: 'Shoes & Accessories'
   }
 ];
 

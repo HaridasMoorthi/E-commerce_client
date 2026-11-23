@@ -172,34 +172,31 @@ export const TrackingPage: React.FC = () => {
   const getGarmentBadge = (title: string = '', category: string = '') => {
     const t = title.toLowerCase();
     const c = category.toLowerCase();
-    if (t.includes('slip') || t.includes('silk')) {
-      return { label: '22-MOMME SILK DRESS', color: 'bg-amber-50 text-amber-900 border-amber-200' };
+    if (t.includes('tuxedo') || (t.includes('suit') && !t.includes('swim'))) {
+      return { label: 'SUPER 150s BESPOKE SUIT', color: 'bg-slate-100 text-slate-900 border-slate-300' };
     }
-    if (t.includes('velvet') || t.includes('gown')) {
-      return { label: 'COUTURE EVENING GOWN', color: 'bg-emerald-50 text-emerald-900 border-emerald-200' };
+    if (t.includes('dinner jacket') || t.includes('velvet')) {
+      return { label: 'SILK VELVET DINNER JACKET', color: 'bg-indigo-50 text-indigo-900 border-indigo-200' };
     }
-    if (t.includes('linen') || t.includes('riviera')) {
-      return { label: 'NORMANDY LINEN DRESS', color: 'bg-sky-50 text-sky-900 border-sky-200' };
+    if (t.includes('chesterfield') || t.includes('overcoat')) {
+      return { label: 'CASHMERE CHESTERFIELD', color: 'bg-amber-50 text-amber-900 border-amber-200' };
     }
-    if (t.includes('tweed') || t.includes('blazer')) {
-      return { label: 'TWEED BOUCLÉ DRESS', color: 'bg-purple-50 text-purple-900 border-purple-200' };
+    if (t.includes('shirt') && !t.includes('polo')) {
+      return { label: 'EGYPTIAN GIZA SHIRT', color: 'bg-blue-50 text-blue-900 border-blue-200' };
     }
-    if (t.includes('chiffon') || t.includes('floral')) {
-      return { label: 'SILK CHIFFON DRESS', color: 'bg-rose-50 text-rose-900 border-rose-200' };
-    }
-    if (t.includes('tuxedo') || t.includes('suit') || c.includes('suit')) {
-      return { label: 'SUPER 150s TUXEDO', color: 'bg-slate-100 text-slate-800 border-slate-300' };
-    }
-    if (t.includes('shirt')) {
-      return { label: 'GIZA COTTON SHIRT', color: 'bg-blue-50 text-blue-900 border-blue-200' };
-    }
-    if (t.includes('trouser') || t.includes('pant')) {
-      return { label: 'GURKHA FLANNEL', color: 'bg-stone-100 text-stone-800 border-stone-300' };
+    if (t.includes('trouser') || t.includes('gurkha') || t.includes('flannel')) {
+      return { label: 'GURKHA FLANNEL TROUSERS', color: 'bg-stone-100 text-stone-800 border-stone-300' };
     }
     if (t.includes('cashmere') || t.includes('sweater')) {
-      return { label: 'MONGOLIAN CASHMERE', color: 'bg-amber-50 text-amber-800 border-amber-200' };
+      return { label: 'MONGOLIAN CASHMERE KNIT', color: 'bg-amber-50 text-amber-800 border-amber-200' };
     }
-    return { label: 'LUXURY ENSEMBLE', color: 'bg-slate-50 text-slate-700 border-slate-200' };
+    if (t.includes('loafer') || t.includes('shoe')) {
+      return { label: 'GOODYEAR WELTED LEATHER', color: 'bg-rose-50 text-rose-900 border-rose-200' };
+    }
+    if (t.includes('polo')) {
+      return { label: 'SILK-COTTON KNIT POLO', color: 'bg-sky-50 text-sky-900 border-sky-200' };
+    }
+    return { label: 'BESPOKE MENSWEAR', color: 'bg-slate-50 text-slate-700 border-slate-200' };
   };
 
   const getStatusInfo = (status: string = 'DISPATCHED') => {
@@ -414,7 +411,7 @@ export const TrackingPage: React.FC = () => {
                 Live Shipment Tracking
               </h1>
               <p className="text-xs sm:text-sm text-stone-600 mt-1.5 max-w-2xl leading-relaxed">
-                Monitor real-time air waybill dispatch, milestone inspection stages, and direct carrier handover for all your curated Old Money dresses, evening gowns, and bespoke menswear.
+                Monitor real-time air waybill dispatch, milestone inspection stages, and direct carrier handover for all your curated Old Money bespoke suits, dinner tuxedos, and tailored menswear.
               </p>
             </div>
 

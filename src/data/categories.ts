@@ -1,56 +1,23 @@
 import { Category, Brand } from '../types';
 
 export const BRANDS: Brand[] = [
-  { id: 'b1', name: 'RSVP Atelier', slug: 'rsvp-atelier', logo: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b2', name: 'Tom Ford Haute Couture', slug: 'tom-ford', logo: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b3', name: 'Loro Piana Atelier', slug: 'loro-piana', logo: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b4', name: 'Chanel Haute Couture', slug: 'chanel', logo: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b5', name: 'Zimmermann Atelier', slug: 'zimmermann', logo: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b6', name: 'Savile Row Bespoke', slug: 'savile-row', logo: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b7', name: 'Brioni Milano', slug: 'brioni', logo: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=200&auto=format&fit=crop', isLuxe: true },
-  { id: 'b8', name: 'Ralph Lauren Purple Label', slug: 'ralph-lauren', logo: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=200&auto=format&fit=crop', isLuxe: true }
+  { id: 'b1', name: 'Savile Row Bespoke', slug: 'savile-row', logo: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&auto=format&fit=crop', isLuxe: true },
+  { id: 'b2', name: 'Brioni Milano', slug: 'brioni', logo: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=200&auto=format&fit=crop', isLuxe: true },
+  { id: 'b3', name: 'Ralph Lauren Purple Label', slug: 'ralph-lauren', logo: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=200&auto=format&fit=crop', isLuxe: true },
+  { id: 'b4', name: 'Tom Ford Tailoring', slug: 'tom-ford', logo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&auto=format&fit=crop', isLuxe: true },
+  { id: 'b5', name: 'Loro Piana Atelier', slug: 'loro-piana', logo: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&auto=format&fit=crop', isLuxe: true },
+  { id: 'b6', name: 'Zegna Sartoria', slug: 'zegna', logo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop' },
+  { id: 'b7', name: 'Canali 1934', slug: 'canali', logo: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=200&auto=format&fit=crop' },
+  { id: 'b8', name: 'Huntsman Savile Row', slug: 'huntsman', logo: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=200&auto=format&fit=crop', isLuxe: true }
 ];
 
 export const CATEGORIES: Category[] = [
-  {
-    id: 'c-dresses',
-    name: 'Westernwear & Dresses',
-    slug: 'westernwear-dresses',
-    gender: 'women',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&auto=format&fit=crop&q=85',
-    subcategories: [
-      {
-        id: 'w-slip-dresses',
-        name: 'Evening Slip Dresses',
-        slug: 'evening-slip-dresses',
-        items: ['Mulberry Silk Bias Slips', 'Champagne Cowl Neck Dresses', 'Velvet Cocktail Slips', 'Silk Charmeuse Gowns']
-      },
-      {
-        id: 'w-gowns',
-        name: 'Couture Evening Gowns',
-        slug: 'couture-evening-gowns',
-        items: ['Emerald Velvet Gowns', 'Backless Gala Dresses', 'Red Carpet Column Gowns', 'High-Slit Soiree Gowns']
-      },
-      {
-        id: 'w-resort-dresses',
-        name: 'Resort & Riviera Dresses',
-        slug: 'resort-riviera-dresses',
-        items: ['Pleated French Linen Dresses', 'Horn-Belted Midi Dresses', 'Capri Summer Silhouettes', 'Italian Cotton Sun Dresses']
-      },
-      {
-        id: 'w-blazer-dresses',
-        name: 'Tailored Blazer Dresses',
-        slug: 'tailored-blazer-dresses',
-        items: ['Bouclé Tweed Dresses', 'Double-Breasted Pearl Dresses', 'Structured Tuxedo Dresses', 'Monochrome Houndstooth']
-      }
-    ]
-  },
   {
     id: 'c-suits',
     name: 'Suits & Tuxedos',
     slug: 'suits-tuxedos',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&auto=format&fit=crop&q=80',
     subcategories: [
       {
         id: 'm-tuxedos',
@@ -77,7 +44,7 @@ export const CATEGORIES: Category[] = [
     name: 'Shirts & Polos',
     slug: 'shirts-polos',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop&q=80',
     subcategories: [
       {
         id: 'm-formal-shirts',
@@ -98,7 +65,7 @@ export const CATEGORIES: Category[] = [
     name: 'Trousers & Chinos',
     slug: 'trousers-chinos',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=500&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&auto=format&fit=crop&q=80',
     subcategories: [
       {
         id: 'm-tailored-trousers',
@@ -113,13 +80,34 @@ export const CATEGORIES: Category[] = [
     name: 'Knitwear & Sweaters',
     slug: 'knitwear-sweaters',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&auto=format&fit=crop&q=80',
     subcategories: [
       {
         id: 'm-cashmere',
         name: 'Cashmere & Wool',
         slug: 'cashmere-wool',
         items: ['Cable-Knit Sweaters', 'Cashmere Crewnecks', 'Merino Wool Cardigans', 'Quarter-Zip Knits']
+      },
+      {
+        id: 'm-outerwear',
+        name: 'Overcoats & Trench',
+        slug: 'overcoats-trench',
+        items: ['Cashmere Overcoats', 'Double-Breasted Trenches', 'Chesterfield Wool Coats', 'Peacoats']
+      }
+    ]
+  },
+  {
+    id: 'c-shoes',
+    name: 'Shoes & Accessories',
+    slug: 'shoes-accessories',
+    gender: 'men',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=80',
+    subcategories: [
+      {
+        id: 'm-shoes',
+        name: 'Fine Footwear',
+        slug: 'fine-footwear',
+        items: ['Goodyear Penny Loafers', 'Oxford Formal Shoes', 'Monk Strap Shoes', 'Chelsea Boots']
       }
     ]
   }

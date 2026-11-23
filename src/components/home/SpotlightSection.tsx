@@ -15,48 +15,48 @@ interface SpotlightBrand {
 const SPOTLIGHT_BRANDS: SpotlightBrand[] = [
   {
     id: 'sp-1',
-    brandName: 'RSVP Atelier',
-    logoText: 'RSVP ATELIER',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=700&auto=format&fit=crop&q=85',
-    discount: 'Up to 50% off',
-    subtitle: 'Mulberry Silk Bias-Cut Slip Dresses',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    id: 'sp-2',
-    brandName: 'Tom Ford Haute Couture',
-    logoText: 'TOM FORD',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=700&auto=format&fit=crop&q=85',
-    discount: 'Min 45% off',
-    subtitle: 'Emerald Velvet Backless Evening Gowns',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    id: 'sp-3',
-    brandName: 'Loro Piana Atelier',
-    logoText: 'LORO PIANA',
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=700&auto=format&fit=crop&q=85',
-    discount: 'Up to 40% off',
-    subtitle: 'Pleated French Linen Riviera Dresses',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    id: 'sp-4',
-    brandName: 'Chanel Haute Couture',
-    logoText: 'CHANEL ATELIER',
-    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700&auto=format&fit=crop&q=85',
-    discount: 'Min 40% off',
-    subtitle: 'Tweed Bouclé Pearl-Buttoned Blazer Dresses',
-    category: 'Westernwear & Dresses'
-  },
-  {
-    id: 'sp-5',
     brandName: 'Savile Row Bespoke',
     logoText: 'SAVILE ROW',
     image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=700&auto=format&fit=crop&q=85',
     discount: 'Up to 50% off',
-    subtitle: 'Super 150s Merino Wool Black-Tie Suiting',
+    subtitle: 'British Bespoke Suiting & Dinner Tuxedos',
     category: 'Suits & Tuxedos'
+  },
+  {
+    id: 'sp-2',
+    brandName: 'Brioni Milano',
+    logoText: 'BRIONI MILANO',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=700&auto=format&fit=crop&q=85',
+    discount: 'Up to 50% off',
+    subtitle: 'Italian Sartorial Excellence & Giza Shirts',
+    category: 'Suits & Tuxedos'
+  },
+  {
+    id: 'sp-3',
+    brandName: 'Ralph Lauren',
+    logoText: 'PURPLE LABEL',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=700&auto=format&fit=crop&q=85',
+    discount: 'Min 40% off',
+    subtitle: 'High-Waisted Wool Flannel Gurkhas',
+    category: 'Trousers & Chinos'
+  },
+  {
+    id: 'sp-4',
+    brandName: 'Tom Ford',
+    logoText: 'TOM FORD',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&auto=format&fit=crop&q=85',
+    discount: 'Min 45% off',
+    subtitle: 'Silk Velvet Peak Lapel Dinner Jackets',
+    category: 'Suits & Tuxedos'
+  },
+  {
+    id: 'sp-5',
+    brandName: 'Loro Piana',
+    logoText: 'LORO PIANA',
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=700&auto=format&fit=crop&q=85',
+    discount: 'Up to 40% off',
+    subtitle: 'Finest Grade-A Mongolian Cashmere',
+    category: 'Knitwear & Sweaters'
   }
 ];
 

@@ -24,11 +24,11 @@ export const Header: React.FC = () => {
   const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   const navCategories = [
-    { id: 'c-dresses', name: 'Westernwear & Dresses', label: 'Dresses & Gowns', gender: 'women' },
     { id: 'c-suits', name: 'Suits & Tuxedos', label: 'Suits & Tuxedos', gender: 'men' },
     { id: 'c-shirts', name: 'Shirts & Polos', label: 'Shirts & Polos', gender: 'men' },
     { id: 'c-trousers', name: 'Trousers & Chinos', label: 'Trousers & Chinos', gender: 'men' },
-    { id: 'c-knitwear', name: 'Knitwear & Sweaters', label: 'Knitwear & Sweaters', gender: 'men' }
+    { id: 'c-knitwear', name: 'Knitwear & Sweaters', label: 'Knitwear & Sweaters', gender: 'men' },
+    { id: 'c-shoes', name: 'Shoes & Accessories', label: 'Fine Footwear', gender: 'men' }
   ];
 
   return (

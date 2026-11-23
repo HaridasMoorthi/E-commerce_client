@@ -10,24 +10,24 @@ interface LuxeCategoryCard {
 
 const LUXE_CATEGORIES: LuxeCategoryCard[] = [
   {
-    title: 'Mulberry Silk Slips',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    title: 'Savile Row Suiting',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&auto=format&fit=crop&q=80',
+    category: 'Suits & Tuxedos'
   },
   {
-    title: 'Emerald Gala Gowns',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    title: 'Black-Tie Dinner Jackets',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80',
+    category: 'Suits & Tuxedos'
   },
   {
-    title: 'Riviera Linen Dresses',
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    title: 'Italian Cashmere Knits',
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&auto=format&fit=crop&q=80',
+    category: 'Knitwear & Sweaters'
   },
   {
-    title: 'Tweed Bouclé Dresses',
-    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700&auto=format&fit=crop&q=85',
-    category: 'Westernwear & Dresses'
+    title: 'Goodyear Leather Loafers',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=80',
+    category: 'Shoes & Accessories'
   }
 ];
 
@@ -55,7 +55,7 @@ export const LuxeEditSection: React.FC = () => {
           >
             {/* Background Model Image with Western Evening Couture */}
             <img
-              src={storeContent.luxeBannerImage || "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1200&auto=format&fit=crop&q=85"}
+              src={storeContent.luxeBannerImage || "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&auto=format&fit=crop&q=85"}
               alt="Luxe Bespoke Runway"
               className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out"
               loading="lazy"
