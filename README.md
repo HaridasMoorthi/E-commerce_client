@@ -116,9 +116,9 @@ cd E-commerce_client
 
 6. Start the Django backend server:
    ```bash
-   python manage.py runserver 0.0.0.0:8001
+   python manage.py runserver 0.0.0.0:8002
    ```
-   > The REST API will be live at: **`http://localhost:8001/api/`**
+   > The REST API will be live at: **`http://localhost:8002/api/`**
 
 ---
 
@@ -140,7 +140,7 @@ cd E-commerce_client
    ```bash
    npm run dev
    ```
-   > The storefront will be live at: **`http://localhost:3000/`**
+   > The storefront will be live at: **`http://localhost:3001/`**
 
 ---
 
@@ -214,14 +214,14 @@ E-commerce client/
 
 ### Frontend:
 ```bash
-npm run dev        # Launch Vite development server on port 3000
+npm run dev        # Launch Vite development server on port 3001
 npm run build      # TypeScript validation & production build (dist/)
 npm run preview    # Preview production bundle locally
 ```
 
 ### Backend:
 ```bash
-python manage.py runserver 0.0.0.0:8001   # Launch Django server on port 8001
+python manage.py runserver 0.0.0.0:8002   # Launch Django server on port 8002
 python manage.py makemigrations           # Create migration files
 python manage.py migrate                  # Apply migrations to PostgreSQL
 python manage.py createsuperuser          # Create a custom superuser
@@ -242,12 +242,12 @@ python seed_data.py                       # Populate PostgreSQL with sample orde
   ```
 - If your PostgreSQL password is not blank, edit `DATABASES['default']['PASSWORD']` in `backend/core/settings.py`.
 
-#### 2. Port Conflict (Port 3000 or 8001 in use):
-- To run Vite on a different port: `npm run dev -- --port 3001`
-- To run Django on a different port: `python manage.py runserver 0.0.0.0:8002` (remember to update `VITE_API_URL` in `.env` if changed).
+#### 2. Port Conflict (Port 3001 or 8002 in use):
+- To run Vite on a different port: `npm run dev -- --port 3002`
+- To run Django on a different port: `python manage.py runserver 0.0.0.0:8003`
 
 #### 3. CORS Headers:
-- `django-cors-headers` is pre-configured in `backend/core/settings.py` to accept requests from `http://localhost:3000` and all local loopback addresses.
+- `django-cors-headers` is pre-configured in `backend/core/settings.py` to accept requests from `http://localhost:3001` and all local loopback addresses.
 
 ---
 

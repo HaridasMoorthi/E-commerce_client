@@ -1,9 +1,9 @@
 /**
  * Django + PostgreSQL + SimpleJWT Backend Service Client
- * Production-grade API client connecting frontend to http://localhost:8001/api/
+ * Production-grade API client connecting frontend to http://localhost:8002/api/
  */
 
-const API_BASE_URL = 'http://localhost:8001/api';
+const API_BASE_URL = 'http://localhost:8002/api';
 
 export interface AuthTokens {
   access: string;
